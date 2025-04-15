@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="345dp"
+        android:text="Nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="353dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <TextView
+        android:id="@+id/tv_age"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:text="Idade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="77dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_age" />
+
+    <TextView
+        android:id="@+id/tv_weight"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="24dp"
+        android:text="Peso (Kg)"
+        app:layout_constraintStart_toEndOf="@+id/tv_age"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+    <EditText
+        android:id="@+id/et_weight"
+        android:layout_width="77dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/et_age"
+        app:layout_constraintTop_toBottomOf="@+id/tv_weight" />
+
+    <TextView
+        android:id="@+id/tv_height"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="30dp"
+        android:text="Altura (m)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_weight"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+    <EditText
+        android:id="@+id/et_height"
+        android:layout_width="154dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_weight"
+        app:layout_constraintTop_toBottomOf="@+id/tv_height" />
+
+    <Button
+        android:id="@+id/btn_calculate_imc"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="30dp"
+        android:background="#3F51B5"
+        android:backgroundTint="#3F51B5"
+        android:text="Relatório Nutricional"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_age"
+        app:strokeColor="#F44336" />
+</androidx.constraintlayout.widget.ConstraintLayout>
